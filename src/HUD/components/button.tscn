@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/images/button.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/button-press.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/button-focus.png" type="Texture" id=3]
+
+[node name="button" type="HBoxContainer"]
+anchor_right = 1.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="_texture" type="TextureButton" parent="."]
+margin_left = 112.0
+margin_right = 176.0
+margin_bottom = 64.0
+size_flags_horizontal = 6
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+texture_focused = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="_texture"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Button"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
